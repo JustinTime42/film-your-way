@@ -1,0 +1,44 @@
+#navBar  {
+    color: #449c9e;  
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    overflow-y: hidden;
+    justify-content: flex-end; 
+    align-items: baseline;   
+    padding-bottom: 2em;    
+}
+
+.small-nav div {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.topnav {      
+    transition: 0.7s;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.small-nav {   
+    margin-right: 1em;
+    text-align: right;
+}
+
+
+@media screen and (min-width: 767px) {
+    /* hides burger menu on larger screens*/
+    #navBar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: none;
+    }
+    .small-nav {
+        display: flex;
+    }
+}
+
