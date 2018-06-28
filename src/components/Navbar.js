@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
 
-import './hamburger.css'
-import './navbar.css'
+import '../styles/hamburger.css'
+import '../styles/navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ phone }) => {
+
+    const tel = `tel:${phone}`
 
     //opens and closes the burger menu
     const onClick = () => {
@@ -13,17 +15,17 @@ const Navbar = () => {
         if (burgerID.classList.contains("is-active")){            
             document.getElementById("navBar").style.height="100%"                  
         } else {
-            document.getElementById("navBar").style.height="50px"            
+            document.getElementById("navBar").style.height="60px"            
         }
     }
 
     return (
         <header id="navBar">
             <div className="topnav">  
-                <h4>
-                    <div><NavLink to="/Contact">Inquire Now</NavLink></div>
-                    <div>Call us: <a href="tel:1-555-555-5555">555-555-5555</a></div>
-                </h4>
+                <div>
+                    <NavLink to="/Contact"><h4>Inquire Now</h4></NavLink>
+                    <h4>Call us: <a href={tel}>{phone}</a></h4>
+                </div>
                 <button id="burgerButton" className="hamburger hamburger--spin" type="button" onClick={onClick}>
                     <span className="hamburger-box">
                         <span className="hamburger-inner"></span>
@@ -32,7 +34,7 @@ const Navbar = () => {
             </div>
             <nav className="small-nav">
                 <div>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink exact to="/">Home</NavLink>
                 </div>
                 <div>
                     <NavLink to="/About">About Us</NavLink>
