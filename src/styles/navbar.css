@@ -2,7 +2,7 @@
     color: #449c9e;  
     text-decoration: none;
     font-family: "Lato", sans-serif;
-    height: 60px;
+    height: 30px;
     width: 100%;
     z-index: 1;
     overflow-y: hidden;
@@ -16,8 +16,7 @@
 }
 
 .small-nav div {
-    padding-bottom: 1em;
-    padding-left: 2em;
+    padding: 1em 0 1em 2em;
 }
 
 .topnav {      

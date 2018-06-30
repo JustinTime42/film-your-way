@@ -15,7 +15,7 @@ const Navbar = ({ phone }) => {
         if (burgerID.classList.contains("is-active")){            
             document.getElementById("navBar").style.height="100%"                  
         } else {
-            document.getElementById("navBar").style.height="60px"            
+            document.getElementById("navBar").style.height="30px"            
         }
     }
 
