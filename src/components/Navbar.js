@@ -23,8 +23,8 @@ const Navbar = ({ phone }) => {
         <header id="navBar">
             <div className="topnav">  
                 <div>
-                    <NavLink to="/Contact"><h4>Inquire Now</h4></NavLink>
-                    <h4>Call us: <a href={tel}>{phone}</a></h4>
+                    <NavLink to="/Contact"><h1>Inquire Now</h1></NavLink>
+                    <h1>Call us: <a href={tel}>{phone}</a></h1>
                 </div>
                 <button id="burgerButton" className="hamburger hamburger--spin" type="button" onClick={onClick}>
                     <span className="hamburger-box">

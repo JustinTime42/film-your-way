@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
-import { Route, HashRouter } from "react-router-dom"
+import { Route, HashRouter } from 'react-router-dom'
+import Portfolio from '../containers/Portfolio'
+import About from '../components/About'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+import Home from '../components/Home'
+import Navbar from '../components/Navbar'
 
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import './styles/App.css'
-import Contact from './components/Contact';
+import '../styles/App.css'
+
 
 class App extends Component {
   constructor() {
@@ -27,10 +31,10 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
         <HashRouter>
-          <div>
+          <div className="App">
             <Navbar phone={this.state.phone} />
+            <img src={this.state.logo.url} />
             <Route 
               exact path="/" 
               render={(props) => {
@@ -38,8 +42,7 @@ class App extends Component {
                   <Home 
                     {...props} 
                     logo={this.state.logo.url} 
-                    heroshot={this.state.heroshot.url}
-                     
+                    heroshot={this.state.heroshot.url}                     
                   />
                 ) 
               }}                
@@ -54,10 +57,22 @@ class App extends Component {
                   />
                 )
               }}
+            />        
+            <Route
+              path="/about"
+              render={(props) => {
+                return (
+                  <About
+                    {...props}
+                    content ={this.state}
+                  />                    
+                )
+              }}
             />
-          </div>        
-        </HashRouter>
-      </div>
+            <Route path="/portfolio" component={Portfolio} /> 
+            <Footer tagline={this.state.tagline}/>
+          </div>  
+        </HashRouter>      
     )
   }
 }

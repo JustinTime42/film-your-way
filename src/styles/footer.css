@@ -1,0 +1,9 @@
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.social-media a {
+    margin: 1em;
+}

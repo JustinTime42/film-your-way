@@ -4,7 +4,7 @@ const Contact = ({ logo }) => {
      
     return (
         <div>   
-            <img src={logo} />
+           
             <div>
                 <iframe src={"https://eepurl.com/dzr9LH"} />
             </div>

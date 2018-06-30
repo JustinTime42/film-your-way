@@ -1,0 +1,26 @@
+h2 {
+    margin: 2em;
+}
+
+.description {
+    margin-right: 2em;
+    margin-left: 2em;   
+}
+
+.long-text {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 767px) {
+    .description {
+        margin-right: auto;
+         margin-left: auto;
+        width: 66%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .description {
+        width: 50%;
+    }
+}

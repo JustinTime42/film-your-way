@@ -1,0 +1,10 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.portfolio-card {
+    margin: 1em;
+}
