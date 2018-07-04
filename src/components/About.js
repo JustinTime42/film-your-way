@@ -6,8 +6,8 @@ const About = ({ content }) => {
     return (
         <div className="description">
             <h2>{content.tagline}</h2>
-            <div className="long-text">{content.description}</div>
-            <div className="long-text">{content.expectations}</div>
+            <div className="long-text"><p>{content.description}</p></div>
+            <div className="long-text"><p>{content.expectations}</p></div>
             <h2>Our Equipment</h2>
            
                 {
