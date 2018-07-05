@@ -8,7 +8,7 @@ const Home = ({ logo, heroshot }) => {
         <div className="home">
             
             <div>
-                <img src={heroshot} />
+                <img className="heroshot" src={heroshot} />
             </div>
         </div>        
     )    

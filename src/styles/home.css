@@ -1,13 +1,8 @@
 
 
-img {
+.heroshot {
     width: 100%;
     margin-top: 2em;
     border-radius: 1em;
 }
 
-@media screen and (min-width: 767px){
-    img {
-        width: initial;
-    }
-}

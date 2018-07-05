@@ -4,10 +4,7 @@ import { NavLink } from "react-router-dom"
 import '../styles/hamburger.css'
 import '../styles/navbar.css'
 
-const Navbar = ({ phone }) => {
-
-    const tel = `tel:${phone}`
-
+const Navbar = ({ logo }) => {
     //opens and closes the burger menu
     const onClick = () => {
         let burgerID = document.getElementById("burgerButton")
@@ -23,8 +20,7 @@ const Navbar = ({ phone }) => {
         <header id="navBar">
             <div className="topnav">  
                 <div>
-                    <NavLink to="/Contact"><h1>Inquire Now</h1></NavLink>
-                    <h1>Call us: <a href={tel}>{phone}</a></h1>
+                    <img className="logo" src={logo} />
                 </div>
                 <button id="burgerButton" className="hamburger hamburger--spin" type="button" onClick={onClick}>
                     <span className="hamburger-box">

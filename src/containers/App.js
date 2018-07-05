@@ -33,8 +33,8 @@ class App extends Component {
     return (
         <HashRouter>
           <div className="App">
-            <Navbar phone={this.state.phone} />
-            <img src={this.state.logo.url} />
+            <Navbar logo={this.state.logo.url} />
+            
             <Route 
               exact path="/" 
               render={(props) => {
