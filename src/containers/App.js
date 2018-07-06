@@ -34,43 +34,45 @@ class App extends Component {
         <HashRouter>
           <div className="App">
             <Navbar logo={this.state.logo.url} />
-            
-            <Route 
-              exact path="/" 
-              render={(props) => {
-                return (
-                  <Home 
-                    {...props} 
-                    logo={this.state.logo.url} 
-                    heroshot={this.state.heroshot.url}                     
-                  />
-                ) 
-              }}                
-            />
-            <Route 
-              path="/contact"
-              render={(props) => {
-                return (
-                  <Contact
-                    {...props}
-                    logo={this.state.logo.url}  
-                  />
-                )
-              }}
-            />        
-            <Route
-              path="/about"
-              render={(props) => {
-                return (
-                  <About
-                    {...props}
-                    content ={this.state}
-                  />                    
-                )
-              }}
-            />
-            <Route path="/portfolio" component={Portfolio} /> 
-            <Footer tagline={this.state.tagline}/>
+            <div className="fade-in">
+              <Route 
+                exact path="/" 
+                render={(props) => {
+                  return (
+                    <Home 
+                      {...props} 
+                      logo={this.state.logo.url} 
+                      heroshot={this.state.heroshot.url}                     
+                    />
+                  ) 
+                }}                
+              />
+              <Route 
+                path="/contact"
+                render={(props) => {
+                  return (
+                    <Contact
+                      {...props}
+                      logo={this.state.logo.url} 
+                      tagline={this.state.tagline} 
+                    />
+                  )
+                }}
+              />        
+              <Route
+                path="/about"
+                render={(props) => {
+                  return (
+                    <About
+                      {...props}
+                      content ={this.state}
+                    />                    
+                  )
+                }}
+              />
+              <Route path="/portfolio" component={Portfolio} /> 
+              <Footer tagline={this.state.tagline}/>
+            </div>
           </div>  
         </HashRouter>      
     )

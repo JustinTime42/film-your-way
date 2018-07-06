@@ -2,9 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .portfolio-card {
     margin: 1em;
+    flex-basis: 100%;
+    transition: all .5s;
 }
+.portfolio-card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio-card {
+        
+        flex-basis: 40%;
+    }
+}
+

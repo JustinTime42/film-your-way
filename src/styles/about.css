@@ -1,26 +1,46 @@
-h2 {
-    margin: 2em;
+.about-h2 {
+    margin: 1em;
 }
 
-.description {
-    margin-right: 2em;
-    margin-left: 2em;   
+.about-image img {
+    display: none;
 }
 
 .long-text {
-    margin-bottom: 1em;
+    padding: 0 2em;
 }
 
 @media screen and (min-width: 767px) {
-    .description {
+           
+    .description {  
         margin-right: auto;
-         margin-left: auto;
-        width: 66%;
+        margin-left: auto;
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap; 
+        background-color: #eaeaea;    
+    }
+
+    .about-image img {
+        display: initial;
+        width: 100%;
+    }
+
+    .about-image {
+        flex-basis: 50%;
+    }
+
+    .about-text {
+        flex-basis: 50%;
+        align-self: center;    
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .description {
-        width: 50%;
+    .long-text {
+        padding: 0 4em;
+    }
+    .about-h2 {
+        margin: 2em;
     }
 }

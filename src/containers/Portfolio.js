@@ -30,7 +30,7 @@ class Portfolio extends Component {
                     this.state.videosArray.map((video, i) => {
                         return (
                             <div className="portfolio-card" key={i}>                            
-                                <ReactPlayer className="portfolio-video" width="320px" height="180px" url={video} controls={true} />
+                                <ReactPlayer className="portfolio-video" width="100%" height="auto" url={video} controls={true} />
                             </div>
                         )                        
                     })
