@@ -1,5 +1,5 @@
 {
-  "homepage": "https://git.heroku.com/film-your-way-site.git",
+  "homepage": "https://film-your-way-site.herokuapp.com/",
   "name": "film-your-way",
   "version": "0.1.0",
   "private": true,
