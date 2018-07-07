@@ -12,8 +12,7 @@
 }
 
 .logo {
-width:200px;
-    
+    width:200px;    
 }
 
 .active {
@@ -34,7 +33,6 @@ width:200px;
     margin-right: 1em;
     text-align: right;
 }
-
 
 @media screen and (min-width: 767px) {
     /* hides burger menu on larger screens*/

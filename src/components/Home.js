@@ -8,8 +8,9 @@ const Home = ({ logo, heroshot }) => {
     return (
         <div className="home">            
             <div>
-                <NavLink to="/About"><img className="heroshot" src={heroshot} /></NavLink>
-                
+                <NavLink to="/About">
+                    <img alt="heroshot" className="heroshot" src={heroshot} />
+                </NavLink>                
             </div>
         </div>        
     )    

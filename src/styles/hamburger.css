@@ -18,8 +18,7 @@
     color: inherit;
     text-transform: none;
     background-color: transparent;
-    border: 0;
-    
+    border: 0;    
     overflow: visible; }
     .hamburger:hover {
       opacity: 0.7; }

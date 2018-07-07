@@ -7,8 +7,6 @@ import Footer from '../components/Footer'
 import Home from '../components/Home'
 import Navbar from '../components/Navbar'
 
-import '../styles/App.css'
-
 class App extends Component {
   constructor() {
     super()
@@ -18,9 +16,7 @@ class App extends Component {
   componentDidMount() {
     fetch("https://film-your-way.herokuapp.com/home")
     .then(response => response.json())
-    .then(items => {      
-        this.setState({...items})
-    })
+    .then(items => this.setState({...items}))
   }
 
   render() {

@@ -20,7 +20,7 @@ const Navbar = ({ logo }) => {
         <header id="navBar">
             <div className="topnav">  
                 <div>
-                    <img className="logo" src={logo} />
+                    <img alt="We film your way" className="logo" src={logo} />
                 </div>
                 <button id="burgerButton" className="hamburger hamburger--spin" type="button" onClick={onClick}>
                     <span className="hamburger-box">
@@ -43,9 +43,7 @@ const Navbar = ({ logo }) => {
                 </div>
             </nav>  
         </header>
-
-    )
- 
+    ) 
 }
 
 export default Navbar

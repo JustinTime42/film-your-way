@@ -6,7 +6,7 @@ const About = ({ content }) => {
     return (
         <div className="description">
             <div className="about-image">
-                <img alt="photo of us" src={content.aboutimg.url}/>
+                <img alt="film your way team" src={content.aboutimg.url}/>
             </div>
             <div className="about-text">
                 <h2 className="about-h2">{content.tagline}</h2>

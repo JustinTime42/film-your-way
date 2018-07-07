@@ -1,11 +1,9 @@
 body {
   margin-right: auto;
   margin-left: auto;
-
   text-align: center;  
   background-color: white; 
 } 
-
 
 .App {
   width: 100%;
@@ -61,5 +59,3 @@ p {
     width: 90%;
   }
 }
-
-
