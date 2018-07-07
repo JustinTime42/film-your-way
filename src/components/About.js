@@ -20,7 +20,8 @@ const About = ({ content }) => {
                             <div><h3>{item}</h3></div>
                         )
                     })
-                }            
+                }   
+                <h3 className="contract"><a href={content.contract}>Download our contract letter for more details</a></h3>
             </div>
         </div>
     )

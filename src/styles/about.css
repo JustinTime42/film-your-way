@@ -10,6 +10,10 @@
     padding: 0 2em;
 }
 
+.contract {
+    margin-top: 3em;
+}
+
 @media screen and (min-width: 767px) {
            
     .description {  

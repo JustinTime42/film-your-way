@@ -20,7 +20,7 @@ iframe {
 
 a {
   font-size: 22px;
-  font-family: 'Special Elite';
+  font-family: 'Oswald', sans-serif;
   color: #253031;
   text-decoration: none;
   transition: .1s;
@@ -29,7 +29,7 @@ a {
 
 h1 {
   font-size: 22px;
-  font-family: 'Special Elite';
+  font-family: 'Oswald', sans-serif;
   color: #253031;
   line-height: 40%;
 }
@@ -41,7 +41,7 @@ h2 {
 } 
 
 h3 {  
-  font-family: 'Special Elite';
+  font-family: 'Oswald', sans-serif;
   color: #253031;
   line-height: 40%;
 } 
