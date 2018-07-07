@@ -6,14 +6,6 @@ body {
   background-color: white; 
 } 
 
-@keyframes fadein {
-  from {opacity: 0;}
-  top {opacity: 100%;}
-}
-
-.fade-in {
-  animation: fadein 2s;
-}
 
 .App {
   width: 100%;

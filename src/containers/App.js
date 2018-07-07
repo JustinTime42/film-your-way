@@ -9,7 +9,6 @@ import Navbar from '../components/Navbar'
 
 import '../styles/App.css'
 
-
 class App extends Component {
   constructor() {
     super()
@@ -34,7 +33,7 @@ class App extends Component {
         <HashRouter>
           <div className="App">
             <Navbar logo={this.state.logo.url} />
-            <div className="fade-in">
+            <div>
               <Route 
                 exact path="/" 
                 render={(props) => {
