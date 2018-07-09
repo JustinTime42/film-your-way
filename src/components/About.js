@@ -14,10 +14,10 @@ const About = ({ content }) => {
                 <div className="long-text"><p>{content.expectations}</p></div>
                 <h2 className="about-h2">Our Equipment</h2>            
                 {
-                    content.equipment.split(",").map(item => {
+                    content.equipment.split(",").map((item, i) => {
                         
                         return (
-                            <div><h3>{item}</h3></div>
+                            <div key={i}><h3>{item}</h3></div>
                         )
                     })
                 }   
