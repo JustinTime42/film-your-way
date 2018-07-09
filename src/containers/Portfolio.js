@@ -41,7 +41,11 @@ class Portfolio extends Component {
                             </div>
                             ) 
                         } 
-                        return                 
+                        return (
+                            <div>
+                                <h1>Loading</h1>
+                            </div>
+                        )             
                     })
                 }                
             </div>
