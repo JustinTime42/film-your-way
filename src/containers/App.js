@@ -65,9 +65,9 @@ class App extends Component {
                   )
                 }}
               />
-              <Route path="/portfolio" component={Portfolio} /> 
-              <Footer tagline={this.state.tagline}/>
+              <Route path="/portfolio" component={Portfolio} />               
             </Switch>
+            <Footer tagline={this.state.tagline}/>
           </div>  
         </BrowserRouter>      
     )
