@@ -46,7 +46,9 @@
         display: none;
     }
     .small-nav {
-        display: flex;
+        display: flex;        
+        justify-content: space-between;
+       
     }
     .logo {     
         margin-left: 1em;        
