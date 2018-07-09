@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, HashRouter } from 'react-router-dom'
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import Portfolio from '../containers/Portfolio'
 import About from '../components/About'
 import Contact from '../components/Contact'
@@ -26,10 +26,10 @@ class App extends Component {
     }
 
     return (
-        <HashRouter>
+        <BrowserRouter>
           <div className="App">
             <Navbar logo={this.state.logo.url} />
-            <div>
+            <Switch>
               <Route 
                 exact path="/" 
                 render={(props) => {
@@ -67,9 +67,9 @@ class App extends Component {
               />
               <Route path="/portfolio" component={Portfolio} /> 
               <Footer tagline={this.state.tagline}/>
-            </div>
+            </Switch>
           </div>  
-        </HashRouter>      
+        </BrowserRouter>      
     )
   }
 }
