@@ -36,7 +36,12 @@
 
     .about-text {
         flex-basis: 50%;
-        align-self: center;    
+        align-self: center;
+       
+    }
+
+    .about-text p {
+        font-size: 22px;  
     }
 }
 
