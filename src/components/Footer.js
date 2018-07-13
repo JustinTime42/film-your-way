@@ -3,7 +3,7 @@ import '../styles/footer.css'
 const Footer = ({ tagline }) => {
     return (
         <div>
-            <h3>{tagline}</h3>           
+            <h2>{tagline}</h2>           
             <div className="social-media">                 
                 <a href="https://www.facebook.com/filmyourwayproductions/" className="fa fa-facebook">{/* eslint-disable-next-line */}</a>
                 <a href="https://www.youtube.com/channel/UCmpLEzzC3ORbcjDjVRd72KA" className="fa fa-youtube">{/* eslint-disable-next-line */}</a>
