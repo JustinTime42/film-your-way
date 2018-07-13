@@ -40,12 +40,7 @@ class Portfolio extends Component {
                                 <p><a href={video.youtube}>{video.video.title}</a></p>
                             </div>
                             ) 
-                        } 
-                        return (
-                            <div>
-                                <h1>Loading</h1>
-                            </div>
-                        )             
+                        }  
                     })
                 }                
             </div>
